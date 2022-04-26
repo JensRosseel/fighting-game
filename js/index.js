@@ -26,6 +26,7 @@ class Sprite {
         }
         this.color = color
         this.isAttacking
+        this.health = 100
     }
 
     draw() {
@@ -146,6 +147,8 @@ function animate() {
         player.isAttacking
     ) {
         player.isAttacking = false
+        opponent.health -= 20
+        document.querySelector('#opponentHealth').style.width = opponent.health + '%'
     }
     if(
         rectangularCollision({
@@ -155,6 +158,8 @@ function animate() {
         opponent.isAttacking
     ) {
         opponent.isAttacking = false
+        player.health -= 20
+        document.querySelector('#playerHealth').style.width = player.health + '%'
     }
 }
 
