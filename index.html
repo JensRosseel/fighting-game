@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Fighting Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="ui">
-            <div class="player-health-container">
-                <div class="player-damage"></div>
-                <div id="playerHealth" class="player-health"></div>
-            </div>
-            <div id="timer" class="timer">
-                10
-            </div>
-            <div class="opponent-health-container">
-                <div class="opponent-damage"></div>
-                <div id="opponentHealth" class="opponent-health"></div>
-            </div>
+      <div class="ui">
+        <div class="player-health-container">
+          <div class="player-damage"></div>
+          <div id="playerHealth" class="player-health"></div>
         </div>
-        <div class="info-container">
-            Tie
+        <div id="timer" class="timer">10</div>
+        <div class="opponent-health-container">
+          <div class="opponent-damage"></div>
+          <div id="opponentHealth" class="opponent-health"></div>
         </div>
-        <canvas></canvas>
+      </div>
+      <div class="info-container">Tie</div>
+      <canvas></canvas>
+      <div class="controls-container">
+        <div class="controls-title">Controls</div>
+        <div class="player-controls">
+          <ul>
+            Player 1
+            <li>W = Jump</li>
+            <li>A = Left</li>
+            <li>D = Right</li>
+            <li>SPACE = Attack</li>
+          </ul>
+        </div>
+        <div class="opponent-controls">
+          <ul>
+            Player 2
+            <li>&uarr; = Jump</li>
+            <li>&larr; = Left</li>
+            <li>&rarr; = Right</li>
+            <li>&darr; = Attack</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="./js/utils.js"></script>
     <script src="./js/classes.js"></script>
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
